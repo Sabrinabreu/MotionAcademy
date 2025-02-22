@@ -168,13 +168,6 @@
     background-color: #fff;
     border-radius: 8px;
 } 
-                    .cursos-title {
-                        text-align: center;
-                        font-size: 28px;
-                        color: #FF6F00;
-                        margin-bottom: 30px;
-                    }
-                
                     .cursos-container {
                         display: flex;
                         gap: 40px;
@@ -197,6 +190,61 @@
                         margin-bottom: 15px;
                     }
                 
+
+
+
+
+
+.rodape {
+    background-color: #f9f9f9;
+    padding: 27px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+        .rodape h3 {
+            color: #e53e2f;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .rodape a {
+            color: #000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            line-height: 2;
+        }
+                .rodape a:hover {
+                    color: #e53e2f;
+                }
+
+        .rodape-conteudo {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .rodape-sobre,
+        .links-uteis,
+        .redes-sociais {
+            flex: 1;
+            line-height: 1.6;
+        }
+                .links-uteis ul,
+                .redes-sociais ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+
+        .rodape-sobre {
+            text-align: center;
+            margin-right: 50px;
+        }
+
+        .rodape-informacao {
+            text-align: center;
+            font-size: 12px;
+            padding-top: 20px;
+        }
+
 
 
 
