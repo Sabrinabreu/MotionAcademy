@@ -68,7 +68,6 @@
             }
 
 
-
 .sobre-nos {
     padding: 50px 20px;
     display: flex;
@@ -99,7 +98,6 @@
             }
             .sobre-nos-texto p {
                 font-size: 18px;
-                color: #333;
                 line-height: 1.6;
             }
 
@@ -124,9 +122,6 @@
             .sobre-nos-btn:hover {
                 background-color: #e53e2f;
             }
-
-
-
 
 
 .mapa-conteiner {
@@ -154,12 +149,8 @@
                         margin-bottom: 5px;
                     }
                     .detalhe p {
-                        color: #555;
                         font-size: 15px;
                     }
-
-
-
 
 
 .cursos {
@@ -191,9 +182,17 @@
                     }
                 
 
-
-
-
+.card-video {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
 
 .rodape {
     background-color: #f9f9f9;
@@ -244,8 +243,6 @@
             font-size: 12px;
             padding-top: 20px;
         }
-
-
 
 
 /* fonte banner */
