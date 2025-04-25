@@ -1,14 +1,58 @@
 .card-row {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 29px;
-    
+    gap: 40px;
+    justify-content: center;
 }
 
-.card-cursos {
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 250px;
-    text-align: center;
-}
+.cursos-card {
+    display: flex;
+    width: 400px;
+    height: 230px;
+    background-color: #f8f3f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .cursos-image {
+    width: 40%;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  .cursos-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+      .cursos-info h2 {
+        font-size: 20px;
+        margin: 0;
+        font-weight: bold;
+      }
+      .cursos-info p {
+        font-size: 0.9rem;
+        color: #333;
+        margin: 0;
+      }
+  
+  .cursos-button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    border: 1.5px solid #f94d42;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #f94d42;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+  }
+      .cursos-button:hover {
+        background-color: #f94d42;
+        color: white;
+      }
+  
