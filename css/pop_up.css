@@ -1,0 +1,12 @@
+.popUpCards{
+    display: flex;
+}
+
+.popUpCards .textPop{
+    margin-left: 20px;
+}
+
+.popUpCards img{
+    width: 450px;
+    height: 300px;
+}

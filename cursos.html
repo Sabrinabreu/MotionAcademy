@@ -6,8 +6,24 @@
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/cursos.css" rel="stylesheet"/>
     <title>Cursos</title>
+
+    <script>
+        // alert("Venha se aventurar em um novo mundo!")
+  
+        dia=new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado")
+        mes=new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+        data=new Date
+
+        // Função para abrir o Pop-Up de descrição dos produtos
+        function abrirDetalhes(nome, imagem, descricao){
+        const url = `pop_up_cards.html?nomeProd=${encodeURIComponent(nome)}&imagemProd=${encodeURIComponent(imagem)}&descricaoProd=${encodeURIComponent(descricao)}`
+        window.open(url, "_blank", "width=900, height=350");
+        }
+
+      </script>
 </head>
 <body>
+
     <!-- navbar -->
     <header>
         <div class="navbar">
@@ -24,71 +40,82 @@
         </div>
     </header>
 
+    
+
     <h1 class="texto-laranja">Nossos cursos</h1>
-<div class="card-row"> 
-    <div class="cursos-card">
-        <img class="cursos-image" src="./img/texturizacao.jpg" width="150px">
-        <div class="cursos-info">
-            <h2>Texturização 3D</h2>
-            <p>Aprenda a criar texturas realistas para objetos e cenários 3D, dominando técnicas de mapeamento UV, pintura digital e materiais.</p>
-            <button class="cursos-button">Ver mais</button>
+
+        <p style="text-align: right; margin-right: 10px;">
+          <script type="text/javascript">
+            document.write(dia[data.getDay()] + ", " + data.getDate() + " de "+ mes[data.getMonth()] + " de " + data.getFullYear());
+          </script>
+        </p>
+
+        <div class="card-row"> 
+            <div class="cursos-card" onclick="abrirDetalhes('Texturização 3D', './img/texturizacao.jpg', 'Aprenda a criar texturas realistas para objetos e cenários 3D, dominando técnicas de mapeamento UV, pintura digital e materiais. Este curso abrangente cobrirá desde os conceitos básicos até as técnicas avançadas para a criação de texturas de alta qualidade, ideais para produções de animação, jogos e modelagem 3D profissional. Você aprenderá a usar as ferramentas mais recentes e as melhores práticas da indústria para criar texturas que trazem realismo e riqueza aos modelos 3D.')">
+                <img class="cursos-image" src="./img/texturizacao.jpg" width="150px">
+                <div class="cursos-info">
+                    <h2>Texturização 3D</h2>
+                    <p>Aprenda a criar texturas realistas para objetos e cenários 3D, dominando técnicas de mapeamento UV, pintura digital e materiais.</p>
+                    <button class="cursos-button">Ver mais</button>
+                </div>
+            </div>
+            
+            <div class="cursos-card" onclick="abrirDetalhes('Video Maker', './img/VideoMaker.webp', 'Domine as técnicas de filmagem, edição e produção de vídeos com qualidade profissional para redes sociais, eventos e publicidade. O curso de Video Maker irá proporcionar uma formação completa sobre todas as etapas do processo de produção de vídeos: desde o planejamento da filmagem até a edição final. Além disso, você aprenderá a criar vídeos atrativos para diversos formatos de mídia, com ênfase em técnicas de filmagem, captação de áudio e edição de imagem, utilizando softwares de ponta.')">
+                <img class="cursos-image" src="./img/VideoMaker.webp" width="150px">
+                <div class="cursos-info">
+                    <h2>Video Maker</h2>
+                    <p>Domine as técnicas de filmagem, edição e produção de vídeos com qualidade profissional para redes sociais, eventos e publicidade.</p>
+                    <button class="cursos-button">Ver mais</button>
+                </div>
+            </div>
+            
+            <div class="cursos-card" onclick="abrirDetalhes('Animação 2D', './img/animacao2d.jpg', 'Explore os princípios da animação tradicional e digital em 2D, criando personagens e histórias com fluidez e expressão. Neste curso, você será introduzido às técnicas fundamentais de animação 2D, desde o processo de criação de personagens até as animações mais avançadas. Você aprenderá sobre a manipulação de frames, interpolação e uso de softwares especializados, com foco em expressões, movimento e narrativa visual, essenciais para criar animações que capturam a atenção do público.')">
+                <img class="cursos-image" src="./img/animacao2d.jpg" width="150px">
+                <div class="cursos-info">
+                    <h2>Animação 2D</h2>
+                    <p>Explore os princípios da animação tradicional e digital em 2D, criando personagens e histórias com fluidez e expressão.</p>
+                    <button class="cursos-button">Ver mais</button>
+                </div>
+            </div>
+            
+            <div class="cursos-card" onclick="abrirDetalhes('Modelagem e Animação 3D', './img/ToyStory.jpg', 'Aprenda a modelar personagens e objetos em 3D e a animá-los em ambientes virtuais usando softwares profissionais. O curso de Modelagem e Animação 3D é um curso completo que abrange todo o processo criativo, desde o esboço até a animação final. Aprenda a criar personagens e objetos tridimensionais, aplicando texturas, efeitos e iluminação, e depois animá-los em um ambiente virtual. O curso também inclui técnicas para trabalhar com softwares 3D avançados e otimizar os projetos para produções profissionais.')">
+                <img class="cursos-image" src="./img/ToyStory.jpg" width="150px">
+                <div class="cursos-info">
+                    <h2>Modelagem e Animação 3D</h2>
+                    <p>Aprenda a modelar personagens e objetos em 3D e a animá-los em ambientes virtuais usando softwares profissionais.</p>
+                    <button class="cursos-button">Ver mais</button>
+                </div>
+            </div>
+            
+            <div class="cursos-card" onclick="abrirDetalhes('Efeitos Visuais (VFX)', './img/efeitosespeciasi.webp', 'Descubra como integrar efeitos visuais impressionantes em vídeos, combinando CGI, composição e simulações realistas. Neste curso de Efeitos Visuais (VFX), você aprenderá a criar e integrar efeitos especiais em vídeos e filmes, utilizando software de edição e animação avançados. A formação abrange técnicas como a criação de explosões, simulações de fluidos, manipulação de luz e sombras, e a integração de CGI com filmagens reais, para criar resultados cinematográficos de alto impacto.')">
+                <img class="cursos-image" src="./img/efeitosespeciasi.webp" width="150px">
+                <div class="cursos-info">
+                    <h2>Efeitos Visuais (VFX)</h2>
+                    <p>Descubra como integrar efeitos visuais impressionantes em vídeos, combinando CGI, composição e simulações realistas.</p>
+                    <button class="cursos-button">Ver mais</button>
+                </div>
+            </div>
+            
+            <div class="cursos-card" onclick="abrirDetalhes('Design Digital', './img/design.jpg', 'Domine ferramentas e conceitos de design gráfico digital, criando layouts, identidades visuais e artes para mídias digitais. O curso de Design Digital irá guiá-lo através do processo criativo de criar designs visuais impactantes. Desde o uso de ferramentas como Adobe Photoshop e Illustrator até o entendimento de teoria das cores, tipografia e layout. Você aprenderá a criar projetos digitais, como logotipos, sites, posts para redes sociais e materiais promocionais, sempre com foco na estética e funcionalidade.')">
+                <img class="cursos-image" src="./img/design.jpg" width="150px">
+                <div class="cursos-info">
+                    <h2>Design Digital</h2>
+                    <p>Domine ferramentas e conceitos de design gráfico digital, criando layouts, identidades visuais e artes para mídias digitais.</p>
+                    <button class="cursos-button">Ver mais</button>
+                </div>
+            </div>
+            
+            <div class="cursos-card" onclick="abrirDetalhes('Impressão 3D', './img/impressao3d.jpg', 'Aprenda a modelar, preparar e imprimir objetos em 3D, do conceito ao produto final, usando impressoras e softwares especializados. O curso de Impressão 3D cobre todo o processo de criação de objetos tridimensionais, desde a modelagem até a impressão. Você aprenderá a usar programas de modelagem 3D, como o Blender, e como preparar seus modelos para impressão. Além disso, o curso inclui práticas com diferentes tipos de impressoras 3D e materiais, permitindo a criação de protótipos funcionais ou artísticos.')">
+                <img class="cursos-image" src="./img/impressao3d.jpg" width="150px">
+                <div class="cursos-info">
+                    <h2>Impressão 3D</h2>
+                    <p>Aprenda a modelar, preparar e imprimir objetos em 3D, do conceito ao produto final, usando impressoras e softwares especializados.</p>
+                    <button class="cursos-button">Ver mais</button>
+                </div>
+            </div>    
         </div>
-    </div>
-    
-    <div class="cursos-card">
-        <img class="cursos-image" src="./img/VideoMaker.webp" width="150px">
-        <div class="cursos-info">
-            <h2>Video Maker</h2>
-            <p>Domine as técnicas de filmagem, edição e produção de vídeos com qualidade profissional para redes sociais, eventos e publicidade.</p>
-            <button class="cursos-button">Ver mais</button>
-        </div>
-    </div>
-    
-    <div class="cursos-card">
-        <img class="cursos-image" src="./img/animacao2d.jpg" width="150px">
-        <div class="cursos-info">
-            <h2>Animação 2D</h2>
-            <p>Explore os princípios da animação tradicional e digital em 2D, criando personagens e histórias com fluidez e expressão.</p>
-            <button class="cursos-button">Ver mais</button>
-        </div>
-    </div>
-    
-    <div class="cursos-card">
-        <img class="cursos-image" src="./img/ToyStory.jpg" width="150px">
-        <div class="cursos-info">
-            <h2>Modelagem e Animação 3D</h2>
-            <p>Aprenda a modelar personagens e objetos em 3D e a animá-los em ambientes virtuais usando softwares profissionais.</p>
-            <button class="cursos-button">Ver mais</button>
-        </div>
-    </div>
-    
-    <div class="cursos-card">
-        <img class="cursos-image" src="./img/efeitosespeciasi.webp" width="150px">
-        <div class="cursos-info">
-            <h2>Efeitos Visuais (VFX)</h2>
-            <p>Descubra como integrar efeitos visuais impressionantes em vídeos, combinando CGI, composição e simulações realistas.</p>
-            <button class="cursos-button">Ver mais</button>
-        </div>
-    </div>
-    
-    <div class="cursos-card">
-        <img class="cursos-image" src="./img/design.jpg" width="150px">
-        <div class="cursos-info">
-            <h2>Design Digital</h2>
-            <p>Domine ferramentas e conceitos de design gráfico digital, criando layouts, identidades visuais e artes para mídias digitais.</p>
-            <button class="cursos-button">Ver mais</button>
-        </div>
-    </div>
-    
-    <div class="cursos-card">
-        <img class="cursos-image" src="./img/impressao3d.jpg" width="150px">
-        <div class="cursos-info">
-            <h2>Impressão 3D</h2>
-            <p>Aprenda a modelar, preparar e imprimir objetos em 3D, do conceito ao produto final, usando impressoras e softwares especializados.</p>
-            <button class="cursos-button">Ver mais</button>
-        </div>
-    </div>    
-</div>
+        
+        
 
     
 
