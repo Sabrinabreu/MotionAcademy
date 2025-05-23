@@ -5,7 +5,7 @@
 }
 
 .navbar {
-    background-color: #f8f2f2;
+    background-color: #f8f3f0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,7 +21,6 @@
             font-size: 18px;
             cursor: pointer;
             align-self: center;
-            font-family: "Sawarabi Gothic", serif;
         }
             .navlink a{
                 margin-right: 15px;
@@ -131,7 +130,7 @@
 }
             .mapa-txt {
                 flex: 1;
-                background-color: #f9f9f9;
+                background-color: #f8f3f0;
                 padding: 0 25px 25px;
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -141,7 +140,7 @@
                         flex-direction: column;
                     }
                     .detalhe h4 {
-                        color: #FF6F00;
+                        color: #f94d42;
                         font-size: 20px;
                         margin-bottom: 5px;
                     }
@@ -164,7 +163,7 @@
                     }
                 
                     .curso-card {
-                        background-color: #f9f9f9;
+                        background-color: #f8f3f0;
                         padding: 20px;
                         border-radius: 8px;
                         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -173,14 +172,14 @@
                     }
                 
                     .curso-card h3 {
-                        color: #FF6F00;
+                        color: #f94d42;
                         font-size: 20px;
                         margin-bottom: 15px;
                     }
                 
 
 .card-video {
-    background-color: #f9f9f9;
+    background-color: #f8f3f0;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -242,7 +241,7 @@
         }
 
 
-/* fonte banner */
+/* fonte especial */
 .sawarabi-gothic-regular {
     font-family: "Sawarabi Gothic", serif;
     font-weight: 400;
