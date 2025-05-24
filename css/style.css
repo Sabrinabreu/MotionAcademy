@@ -32,7 +32,7 @@
             }
 
 .banner {
-    background-color: #f94d42;
+    background-color: #fe5d44;
     height: 130px;
     width: 100%;
     display: flex;
@@ -40,8 +40,7 @@
     overflow: hidden;
 }
         .garotas-BN img {
-            opacity: 0.9;
-            width: 400px;
+            width: 190px;
         }
 
         .texto-BN {
@@ -60,7 +59,7 @@
             margin-right: 20px;
         }
             .logo-container img{
-                width: 80px;
+                width: 170px;
             }
 
 
