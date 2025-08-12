@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #ffffff, #f3f3f3);
+  background-color: #f8f3f0;
 }
 .card-row {
     display: grid;
@@ -10,7 +10,7 @@ body {
 
 .cursos-card {
     display: flex;
-    background-color: #f8f3f0;
+    background-color: #fff;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
