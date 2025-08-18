@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/contato.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="/img/logoMA.png" type="image/x-icon">
+    <title>Contato</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logoMA.png"/>
+                <img class="logoletra" src="img/letraMA.png"/>
+            </div>
+        
+            <ul class="navlink">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="encomendas.html">Encomendas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+
+    <h1 class="texto-laranja">Contate-nos</h1>
+
+<div class="container-form">
+    <form class="formContact">
+        <div class="label-input">
+            <label class="formLabel">Nome e Sobrenome</label>
+            <input class="formInput" type="text" name="nome" placeholder="Digite seu nome completo">
+        </div>
+        <div class="label-input">
+            <label class="formLabel">E-mail</label>
+            <input class="formInput" type="email" name="email" placeholder="Digite seu e-mail">
+        </div>
+        <div class="label-input">
+            <label class="formLabel">Telefone</label>
+            <input class="formInput" type="tel" name="telefone" placeholder="(00) 00000-0000">
+        </div>
+        <div class="label-input">
+            <label class="formLabel">Mensagem</label>
+            <textarea class="formInput" name="mensagem" rows="6" placeholder="Como podemos te ajudar?"></textarea>
+        </div>
+
+        <div class="label-input">
+            <p class="formLabel">Como prefere o contato?</p>
+            <label><input type="radio" name="preferenciaContato" value="email"> E-mail</label>
+            <label><input type="radio" name="preferenciaContato" value="telefone"> Telefone</label>
+            <label><input type="radio" name="preferenciaContato" value="whatsapp"> WhatsApp</label>
+        </div>
+
+        <div class="label-input">
+            <label class="formLabel">Qual o motivo do contato?</label>
+            <select class="formInput" name="motivo">
+                <option value="">Selecione</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="elogio">Elogio</option>
+                <option value="reclamacao">Reclamação</option>
+            </select>
+        </div>
+
+        <div class="label-input">
+            <label><input type="checkbox" name="novidades"> Gostaria de receber nossas novidades por e-mail</label>
+        </div>
+        
+        <button class="btnContact" type="submit">Enviar Mensagem</button>
+    </form>
+</div>
+    
+        
+
+
+    <!-- rodape -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="rodape-sobre">
+                <h3>Sobre a MotionAcademy</h3>
+                <p>A MotionAcademy é uma escola especializada em animação, oferecendo cursos de Animação 2D, Modelagem e Animação 3D, Efeitos Visuais (VFX), e Design Digital, com modalidades presencial e online. Transforme sua paixão em profissão conosco!</p>
+            </div>
+            <div class="links-uteis">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a>Onde nos encontrar</a></li>
+                    <li><a href="contato.html"></a><a>Contato</a></li>
+                </ul>
+            </div>
+            <div class="redes-sociais">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                    <li><a href="https://www.youtube.com">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape-informacao">
+            <p>&copy; 2025 MotionAcademy. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
