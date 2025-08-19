@@ -8,6 +8,14 @@ body {
     background-color: #f8f3f0;
 }
 
+.texto-laranja {
+    font-size: 36px;
+    color: #f94d42;
+    margin-bottom: 20px;
+    font-family: "Sawarabi Gothic", serif;
+    text-align: center;
+}
+
 .navbar {
     background-color: #f8f3f0;
     display: flex;
@@ -90,13 +98,6 @@ body {
             width: 50%; 
             padding-right: 20px;
         }
-            .texto-laranja {
-                font-size: 36px;
-                color: #f94d42;
-                margin-bottom: 20px;
-                font-family: "Sawarabi Gothic", serif;
-                justify-self: center;
-            }
             .sobre-nos-texto p {
                 font-size: 18px;
                 line-height: 1.6;
@@ -126,6 +127,7 @@ body {
             }
 
 
+/* mapa */
 .mapa-conteiner {
     display: flex;
     justify-content: space-between;
@@ -252,3 +254,84 @@ body {
     font-weight: 400;
     font-style: normal;
   }
+
+
+
+
+  /* MODO CELULAR */
+  @media (max-width: 1600px){
+
+.sobre-nos {
+    padding: 50px 20px;
+    text-align: justify;
+}
+        .sobre-nos-conteudo {
+            display: block;
+        }
+
+        .sobre-nos-texto {
+            width: 100%; 
+            padding-right: 0px;
+            text-align-last: center;
+        }
+
+        .sobre-nos-imagem{
+            text-align: center;
+        }
+        .sobre-nos-imagem img {
+            width: 70%;
+            max-width: none;
+        }
+
+        .sobre-nos-btn {
+            margin: 30px;
+            margin-bottom: 70px;
+            width: 60%;
+            font-size: 30px;
+            padding: 15px 30px;
+        }
+
+/* mapa  */
+.mapa-conteiner {
+    margin: 30px;
+    display: block;
+}
+.mapa-conteiner iframe{
+    width: 100%;
+}
+
+/* texto laranja  */
+.texto-laranja, .card-video h2 {
+    font-size: 50px;
+}
+.detalhe h4, .curso-card h3{
+    font-size: 35px;
+}
+/* texto preto  */
+.sobre-nos-texto p, .detalhe p, .curso-card p{
+    font-size: 32px;
+}
+
+/* cursos  */
+.cursos {
+    padding-top: 0px;
+    margin: 50px 0px;
+}
+.cursos-container {
+    justify-content: center;
+}
+.curso-card {
+    width: 800px;
+}
+
+/* video  */
+.card-video {
+    width: 800px;
+    margin-bottom: 50px;
+}
+.card-video iframe{
+    width: 700px;
+    height: 400px;
+    margin: 40px 0;
+}
+}
