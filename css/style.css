@@ -259,10 +259,39 @@ body {
 
 
   /* MODO CELULAR */
-  @media (max-width: 1600px){
+  @media (min-width: 300px) and (max-width: 1000px){
+
+.logo {
+    padding: 15px;
+    display: flex;
+}
+.logo :last-child{
+    display: none;
+}
+
+.navlink {
+    font-size: 32px;
+}
+
+    .banner {
+        height: 230px;
+    }
+            .imagem-BN img {
+                width: auto;
+                height: 230px;
+            }
+    
+            .texto-BN {
+                font-size: 27px;
+                text-align: center; 
+            }
+    
+                .logo-container img{
+                    display: none;
+                }
 
 .sobre-nos {
-    padding: 50px 20px;
+    padding: 50px;
     text-align: justify;
 }
         .sobre-nos-conteudo {
