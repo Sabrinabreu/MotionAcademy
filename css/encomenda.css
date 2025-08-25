@@ -12,9 +12,68 @@ td, th {
     margin: 0;
     border: 1px solid #cacaca;
     text-align: center;
-    background-color: #fff;
 }
 th {
     font-weight: bold;
     background-color: #eeeeee;
 }
+
+.info-invalida {
+    background-color: red !important;
+    color: #fff !important;
+}
+
+
+
+.form-encomenda {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    margin: 20px 40px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: anchor-center;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel {
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formInput {
+    font-size: 1rem;
+    padding: 12px;
+    border: 2px solid #fe5d44;
+    border-radius: 12px;
+    outline: none;
+    resize: none;
+    transition: 0.3s;
+    width: 300px;
+}
+        .formInput:focus {
+            border-color: #e64a32;
+            box-shadow: 0 0 5px #fe5d44;
+        }
+
+
+.encomenda-btn {
+    margin-top: 30px;
+    background-color: #f94d42; 
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 0;
+}
+    .encomenda-btn:hover {
+        background-color: #e53e2f;
+    }

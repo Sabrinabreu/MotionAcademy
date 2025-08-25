@@ -9,25 +9,13 @@ for (var count = 0; count < clientes.length; count++) {
 
     // Verifica se a quantidade é válida
     if (isNaN(tab_qtd) || tab_qtd < 1) {
-        clientes[count].querySelector(".qtd").textContent = "Quantidade inválida";
-        let tds = clientes[count].querySelectorAll("td");
-
-        // vai olhar cada linha e, se n for valido, fica vermelho
-        tds.forEach(function(td) {
-            td.style.background = "red";
-            td.style.color = "white";
-        });
+        clientes[count].querySelector(".qtd").textContent = "Quantidade inválida!";
+        clientes[count].classList.add("info-invalida");
     } 
     // Verifica se o valor unitário é válido
     else if (isNaN(tab_unitario) || tab_unitario <= 0) {
         clientes[count].querySelector(".unitario").textContent = "R$ Unitário inválido!";
-        let tds = clientes[count].querySelectorAll("td");
-
-        // vai olhar cada linha e, se n for valido, fica vermelho
-        tds.forEach(function(td) {
-            td.style.background = "red";
-            td.style.color = "white";
-        });
+        clientes[count].classList.add("info-invalida");
     } 
     // Se ambos forem válidos, calcula o total
     else {

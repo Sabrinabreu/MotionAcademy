@@ -60,7 +60,7 @@
             <tr class="cliente">
                 <td class="nome">Guilherme Amaral</td>
                 <td class="produto">Efeitos Visuais (VFX)</td>
-                <td class="qtd">1</td>
+                <td class="qtd">0</td>
                 <td class="unitario">190</td>
                 <td class="total"></td>
             </tr>
@@ -75,7 +75,42 @@
     </table>
 </section>
     
-        
+        <h1 class="texto-laranja">Adicionar nova encomenda</h1>
+
+        <section>
+            <form class="form-encomenda" id="form-add-encomenda">
+                <div class="label-input">
+                    <label class="formLabel">Nome do Cliente:</label>
+                    <input class="formInput" type="text" name="nome" required placeholder="Digite seu nome">
+                </div>
+
+                <div class="label-input">
+                    <label class="formLabel">Produto:</label>
+                    <select class="formInput" name="produto" required>
+                        <option value="">Selecione um curso</option>
+                        <option value="Texturização 3D">Texturização 3D</option>
+                        <option value="Video Maker">Video Maker</option>
+                        <option value="Animação 2D">Animação 2D</option>
+                        <option value="Modelagem e Animação 3D">Modelagem e Animação 3D</option>
+                        <option value="Efeitos Visuais (VFX)">Efeitos Visuais (VFX)</option>
+                        <option value="Design Digital">Design Digital</option>
+                        <option value="Impressão 3D">Impressão 3D</option>
+                    </select>
+                </div>
+
+                <div class="label-input">
+                    <label class="formLabel">Quantidade:</label>
+                    <input class="formInput" type="number" id="quantidade" name="quantidade" required min="1" max="100" placeholder="Digite a quantidade">
+                </div>
+
+                <div class="label-input">
+                    <label class="formLabel">Valor Unitário:</label>
+                    <input class="formInput" type="number" id="valor-unitario" name="valor-unitario" required min="1" placeholder="Digite o valor unitario">
+                </div>      
+ 
+                <button class="encomenda-btn" type="submit">Adicionar Encomenda</button>
+            </form>
+        </section>
 
 
     <!-- rodape -->
