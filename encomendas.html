@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/encomenda.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning" />
     
     <link rel="shortcut icon" href="/img/logoMA.png" type="image/x-icon">
     <title>Encomendas</title>
@@ -32,6 +34,11 @@
     <h1 class="texto-laranja">Tabela</h1>
     <!-- tabela -->
 <section class="conteiner">
+
+    <!-- filtro da tabela  -->
+     <label for="filtrar-tabela" class="formLabel">Buscar:</label>
+     <input type="text" id="filtrar-tabela" class="filtrar-tabela" placeholder="Digite o cliente">
+
     <table>
         <thead>
             <tr>
@@ -76,17 +83,21 @@
 </section>
     
         <h1 class="texto-laranja">Adicionar nova encomenda</h1>
+        <p class="msg-erro">
+            <span class="material-symbols-outlined">warning</span> 
+            os campos ----- não foram preenchidos corretamente!
+        </p>
 
         <section>
             <form class="form-encomenda" id="form-add-encomenda">
                 <div class="label-input">
                     <label class="formLabel">Nome do Cliente:</label>
-                    <input class="formInput" type="text" name="nome" required placeholder="Digite seu nome">
+                    <input class="formInput" type="text" name="nome" placeholder="Digite seu nome" required>
                 </div>
 
                 <div class="label-input">
                     <label class="formLabel">Produto:</label>
-                    <select class="formInput" name="produto" required>
+                    <select class="formInput" name="produto">
                         <option value="">Selecione um curso</option>
                         <option value="Texturização 3D">Texturização 3D</option>
                         <option value="Video Maker">Video Maker</option>
@@ -100,12 +111,12 @@
 
                 <div class="label-input">
                     <label class="formLabel">Quantidade:</label>
-                    <input class="formInput" type="number" id="quantidade" name="quantidade" required min="1" max="100" placeholder="Digite a quantidade">
+                    <input class="formInput" type="number" id="quantidade" name="quantidade" min="1" max="100" placeholder="Digite a quantidade" required>
                 </div>
 
                 <div class="label-input">
                     <label class="formLabel">Valor Unitário:</label>
-                    <input class="formInput" type="number" id="unitario" name="unitario" required min="1" placeholder="Digite o valor unitario">
+                    <input class="formInput" type="number" id="unitario" name="unitario" min="1" placeholder="Digite o valor unitario" required>
                 </div>      
  
                 <button class="encomenda-btn" id="encomenda-btn" type="submit">Adicionar Encomenda</button>
@@ -146,5 +157,7 @@
     </footer>
 <script src="js/encomendas.js"></script>
 <script src="js/add_encomenda.js"></script>
+<script src="js/remover_encomenda.js"></script>
+<script src="js/buscar_encomenda.js"></script>
 </body>
 </html>

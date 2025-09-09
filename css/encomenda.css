@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #f8f3f0;
 }
@@ -80,6 +82,45 @@ th {
 
 
 
+/* Efeito para exclusao de linha */
+.fadeOut{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.invisivel {
+    display: none;
+}
+
+
+.msg-erro {
+    background-color: #ff3d2073;
+    border: solid 2px rgb(223, 18, 18);
+    border-radius: 20px;
+    padding: 20px;
+    width: 70%;
+    justify-self: center;
+    color: rgb(223, 18, 18);
+}
+
+.filtrar-tabela{
+    font-size: 1rem;
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid #fe5d44;
+    border-radius: 12px;
+    outline: none;
+    resize: none;
+    transition: 0.3s;
+    width: 250px;
+}
+        .filtrar-tabela:focus {
+            border-color: #e64a32;
+            box-shadow: 0 0 5px #fe5d44;
+        }
+
+
+/* RESPONSIVIDADE */
     @media (min-width: 300px) and (max-width: 1000px){
         .form-encomenda {
             flex-direction: column;
