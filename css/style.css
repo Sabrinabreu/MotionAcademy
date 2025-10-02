@@ -151,34 +151,82 @@ body {
                         font-size: 15px;
                     }
 
-
-.cursos {
-    padding: 40px 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-} 
-                    .cursos-container {
-                        display: flex;
-                        gap: 40px;
-                        justify-self: center;
-                        flex-wrap: wrap;
-                    }
-                
-                    .curso-card {
-                        background-color: #fff;
-                        padding: 20px;
-                        border-radius: 8px;
-                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                        width: 270px;
-                        text-align: center;
-                    }
-                
-                    .curso-card h3 {
-                        color: #f94d42;
-                        font-size: 20px;
-                        margin-bottom: 15px;
-                    }
-                
+.container-estilo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .card-estilo {
+    width: 330px;
+    height: 460px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    box-shadow: 0 10px 30px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  .img-estilo {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    filter: brightness(0.9);
+    transition: opacity 0.2s ease-out;
+  }
+  
+  .title-estilo {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+    transition: bottom 0.3s ease-out;
+  }
+  
+  .text-estilo {
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    max-width: 80%;
+    opacity: 0;
+    text-shadow: 1px 1px 2px #000;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .button-estilo {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+        .card-estilo:hover .title-estilo {
+            bottom: 280px;
+        }
+        .card-estilo:hover .text-estilo,
+        .card-estilo:hover .button-estilo {
+            opacity: 1;
+            transition: opacity 0.5s 0.1s ease-in;
+        }
+        .card-estilo:hover .img-estilo {
+            opacity: 1;
+            transition: 0.3s ease-in;
+            filter: brightness(0.5);
+        }
+ 
 
 .card-video {
     background-color: #fff;
@@ -336,18 +384,6 @@ body {
     font-size: 32px;
 }
 
-/* cursos  */
-.cursos {
-    padding-top: 0px;
-    margin: 50px 0px;
-}
-.cursos-container {
-    justify-content: center;
-}
-.curso-card {
-    width: 800px;
-}
-
 /* video  */
 .card-video {
     width: 800px;
@@ -365,81 +401,13 @@ body {
 
 
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    font-family: 'Roboto', sans-serif;
-  }
   
-  .card {
-    width: 24rem;
-    height: 36rem;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    color: white;
-    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-   
-    img {
-      position: absolute;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      opacity: 0.9;
-      transition: opacity .2s ease-out;
-    }
-  
-    h2 {
-      position: absolute;
-      inset: auto auto 30px 30px;
-      margin: 0;
-      transition: inset .3s .3s ease-out;
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: normal;
-      text-transform: uppercase;
-    }
-    
-    p, a {
-      position: absolute;
-      opacity: 0;
-      max-width: 80%;
-      transition: opacity .3s ease-out;
-    }
-    
-    p {
-      inset: auto auto 80px 30px;
-    }
-    
-    a {
-      inset: auto auto 40px 30px;
-      color: inherit;
-      text-decoration: none;
-    }
-    
-    &:hover h2 {
-      inset: auto auto 220px 30px;
-      transition: inset .3s ease-out;
-    }
-    
-    &:hover p, &:hover a {
-      opacity: 1;
-      transition: opacity .5s .1s ease-in;
-    }
-    
-    &:hover img {
-      transition: opacity .3s ease-in;
-      opacity: 1;
-    }
-  
-  }
-  
-  .material-symbols-outlined {
-    vertical-align: middle;
-  }
+.material-symbols-outlined {
+  vertical-align: middle;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
   
