@@ -1,12 +1,70 @@
-.popUpCards{
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.popUpCards {
     display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
 }
 
-.popUpCards .textPop{
-    margin-left: 20px;
+.imageSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.popUpCards img{
-    width: 450px;
-    height: 300px;
+.mainImage {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.thumbnails img {
+    width: 70px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.thumbnails img:hover,
+.activeThumb {
+    opacity: 1;
+    border-color: #F94D42;
+}
+
+.textPop {
+    max-width: 400px;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.textPop h1 {
+    color: #F94D42;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.textPop p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
 }
