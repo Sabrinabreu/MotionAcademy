@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,21 +13,21 @@ import PopupProduto from "./paginas/PopupProduto";
 import "./App.css";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalogo" element={<Catalogo />} />
-          <Route path="/contato" element={<Contato />} />
-          <Route path="/encomendas" element={<Encomendas />} />
-          <Route path="/produto" element={<PopupProduto />} />
-        </Routes>
-      </main>
-      <Footer />
-    </BrowserRouter>
-  );
-}
+    return (
+      <Router>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/catalogo" element={<Catalogo />} />
+            <Route path="/contato" element={<Contato />} />
+            <Route path="/encomendas" element={<Encomendas />} />
+            <Route path="/produto" element={<PopupProduto />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
+    );
+  }
 
 export default App;
