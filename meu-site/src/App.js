@@ -1,23 +1,32 @@
-import Header from "./Componentes/Header";
-import Banner from "./Componentes/Banner";
-import SobreNos from "./Componentes/SobreNos";
-import Mapa from "./Componentes/Mapa";
-import CardEstilo from "./Componentes/CardEstilo";
-import InspiracaoMes from "./Componentes/InspiracaoMes";
-import Footer from "./Componentes/Footer";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import Home from "./paginas/Home";
+import Catalogo from "./paginas/Catalogo";
+import Contato from "./paginas/Contato";
+import Encomendas from "./paginas/Encomendas";
+import PopupProduto from "./paginas/PopupProduto";
+
 import "./App.css";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <Banner />
-      <SobreNos />
-      <Mapa />
-      <CardEstilo />
-      <InspiracaoMes />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/catalogo" element={<Catalogo />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/encomendas" element={<Encomendas />} />
+          <Route path="/produto" element={<PopupProduto />} />
+        </Routes>
+      </main>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet"/>
-    <link href="css/encomenda.css" rel="stylesheet"/>
+import { Link } from "react-router-dom";
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning" />
-    
-    <link rel="shortcut icon" href="/img/logoMA.png" type="image/x-icon">
-    <title>Encomendas</title>
-</head>
-<body>
-
-    <!-- navbar -->
+export default function Header() {
+  return (
     <header>
-        <div class="navbar">
-            <div class="logo">
+        <div className="navbar">
+            <div className="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 41 16" fill="none">
                     <path d="M5.976 9.696L6.192 9.54C6.464 9.38 6.656 9.3 6.768 9.3C7.016 9.3 7.284 9.524 7.572 9.972C7.748 10.252 7.836 10.476 7.836 10.644C7.836 10.812 7.78 10.952 7.668 11.064C7.564 11.176 7.44 11.276 7.296 11.364C7.152 11.452 7.012 11.536 6.876 11.616C6.748 11.696 6.48 11.8 6.072 11.928C5.664 12.056 5.268 12.12 4.884 12.12C4.508 12.12 4.124 12.072 3.732 11.976C3.348 11.872 2.948 11.704 2.532 11.472C2.124 11.232 1.756 10.944 1.428 10.608C1.1 10.264 0.828 9.828 0.612 9.3C0.404 8.764 0.3 8.184 0.3 7.56C0.3 6.936 0.404 6.372 0.612 5.868C0.82 5.356 1.084 4.936 1.404 4.608C1.732 4.272 2.104 3.992 2.52 3.768C3.304 3.336 4.092 3.12 4.884 3.12C5.26 3.12 5.64 3.18 6.024 3.3C6.416 3.412 6.712 3.528 6.912 3.648L7.2 3.816C7.344 3.904 7.456 3.976 7.536 4.032C7.744 4.2 7.848 4.392 7.848 4.608C7.848 4.816 7.764 5.036 7.596 5.268C7.284 5.7 7.004 5.916 6.756 5.916C6.612 5.916 6.408 5.828 6.144 5.652C5.808 5.38 5.36 5.244 4.8 5.244C4.28 5.244 3.768 5.424 3.264 5.784C3.024 5.96 2.824 6.208 2.664 6.528C2.504 6.848 2.424 7.212 2.424 7.62C2.424 8.02 2.504 8.38 2.664 8.7C2.824 9.02 3.028 9.272 3.276 9.456C3.764 9.808 4.272 9.984 4.8 9.984C5.048 9.984 5.28 9.952 5.496 9.888C5.72 9.824 5.88 9.76 5.976 9.696Z" fill="#F9C22E"/>
                     <path d="M12.776 5.748C12.928 5.796 13.052 5.88 13.148 6C13.252 6.112 13.304 6.296 13.304 6.552C13.304 6.808 13.228 7.088 13.076 7.392C12.924 7.696 12.704 7.848 12.416 7.848C12.272 7.848 12.132 7.816 11.996 7.752C11.868 7.688 11.696 7.656 11.48 7.656C11.264 7.656 11.06 7.732 10.868 7.884C10.684 8.036 10.592 8.22 10.592 8.436V10.956C10.592 11.14 10.584 11.28 10.568 11.376C10.56 11.464 10.524 11.568 10.46 11.688C10.34 11.896 10.028 12 9.524 12C9.14 12 8.864 11.932 8.696 11.796C8.568 11.684 8.496 11.512 8.48 11.28C8.48 11.2 8.48 11.084 8.48 10.932V6.72C8.48 6.536 8.484 6.4 8.492 6.312C8.508 6.216 8.544 6.112 8.6 6C8.712 5.784 9.024 5.676 9.536 5.676C10.016 5.676 10.316 5.768 10.436 5.952C10.524 6.08 10.568 6.212 10.568 6.348C10.608 6.292 10.664 6.224 10.736 6.144C10.816 6.064 10.98 5.956 11.228 5.82C11.476 5.684 11.692 5.616 11.876 5.616C12.068 5.616 12.228 5.628 12.356 5.652C12.484 5.668 12.624 5.7 12.776 5.748Z" fill="#24A19C"/>
@@ -27,141 +15,13 @@
                     </svg>
             </div>
         
-            <ul class="navlink">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="encomendas.html">Encomendas</a></li>
+            <ul className="navlink">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/catalogo">Catálogo</Link></li>
+              <li><Link to="/contato">Contato</Link></li>
+              <li><Link to="/encomendas">Encomendas</Link></li>
             </ul>
         </div>
     </header>
-    
-
-    <h1 class="texto-laranja">Tabela</h1>
-    <!-- tabela -->
-<section class="conteiner">
-
-    <!-- filtro da tabela  -->
-     <label for="filtrar-tabela" class="formLabel">Buscar:</label>
-     <input type="text" id="filtrar-tabela" class="filtrar-tabela" placeholder="Digite o cliente">
-
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Produto</th>
-                <th>Quantidade</th>
-                <th>Valor Unitário</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody id="tabela-clientes">
-            <tr class="cliente">
-                <td class="nome">Carolina Lima</td>
-                <td class="produto">Mini Kit de Tinta Acrílica</td>
-                <td class="qtd">3</td>
-                <td class="unitario">65</td>
-                <td class="total"></td>
-            </tr>
-            <tr class="cliente">
-                <td class="nome">Amanda Clain</td>
-                <td class="produto">Bloco de Papel para Aquarela</td>
-                <td class="qtd">8</td>
-                <td class="unitario">32</td>
-                <td class="total"></td>
-            </tr>
-            <tr class="cliente">
-                <td class="nome">Guilherme Amaral</td>
-                <td class="produto">Kit de Tinta a Óleo Clássica</td>
-                <td class="qtd">0</td>
-                <td class="unitario">35</td>
-                <td class="total"></td>
-            </tr>
-            <tr class="cliente">
-                <td class="nome">Kamile Joarez</td>
-                <td class="produto">Kit de giz oleoso</td>
-                <td class="qtd">1</td>
-                <td class="unitario">59</td>
-                <td class="total"></td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-    
-        <h1 class="texto-laranja">Adicionar nova encomenda</h1>
-
-        <section>
-            <form class="form-encomenda" id="form-add-encomenda">
-                <div class="label-input">
-                    <label class="formLabel">Nome do Cliente:</label>
-                    <input class="formInput" type="text" name="nome" placeholder="Digite seu nome" required>
-                </div>
-
-                <div class="label-input">
-                    <label class="formLabel">Produto:</label>
-                    <select class="formInput" name="produto">
-                        <option value="">Selecione um curso</option>
-                        <option value="Texturização 3D">Texturização 3D</option>
-                        <option value="Video Maker">Video Maker</option>
-                        <option value="Animação 2D">Animação 2D</option>
-                        <option value="Modelagem e Animação 3D">Modelagem e Animação 3D</option>
-                        <option value="Efeitos Visuais (VFX)">Efeitos Visuais (VFX)</option>
-                        <option value="Design Digital">Design Digital</option>
-                        <option value="Impressão 3D">Impressão 3D</option>
-                    </select>
-                </div>
-
-                <div class="label-input">
-                    <label class="formLabel">Quantidade:</label>
-                    <input class="formInput" type="number" id="quantidade" name="quantidade" min="1" max="100" placeholder="Digite a quantidade" required>
-                </div>
-
-                <div class="label-input">
-                    <label class="formLabel">Valor Unitário:</label>
-                    <input class="formInput" type="number" id="unitario" name="unitario" min="1" placeholder="Digite o valor unitario" required>
-                </div>      
- 
-                <button class="encomenda-btn" id="encomenda-btn" type="submit">Adicionar Encomenda</button>
-            </form>
-        </section>
-
-
-    <!-- rodape -->
-      <footer class="rodape">
-          <div class="rodape-conteudo">
-              <div class="rodape-sobre">
-                  <h3>Sobre a Cromia</h3>
-                  <p>Somos apaixonados por arte e acreditamos que todo artista merece materiais que traduzam sua imaginação. 
-                    A Cromia nasceu para ser o ponto de encontro da criatividade, com tintas, papéis e pinceis que inspiram cada traço.</p>
-              </div>
-              <div class="links-uteis">
-                  <h3>Links úteis</h3>
-                  <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="catalogo.html">Catalogo</a></li>
-                      <li><a href="index.html#mapa">Onde nos encontrar</a></li>
-                      <li><a href="contato.html"></a><a>Contato</a></li>
-                  </ul>
-              </div>
-              <div class="redes-sociais">
-                  <h3>Siga-nos</h3>
-                  <ul>
-                      <li><a href="https://www.facebook.com">Facebook</a></li>
-                      <li><a href="https://www.instagram.com">Instagram</a></li>
-                      <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-                      <li><a href="https://www.youtube.com">YouTube</a></li>
-                  </ul>
-              </div>
-          </div>
-
-          <div class="rodape-informacao">
-              <p>&copy; 2025 Cromia. Todos os direitos reservados.</p>
-              <p>Feito com amor e muita tinta.</p>
-          </div>
-      </footer>
-<script src="js/encomendas.js"></script>
-<script src="js/add_encomenda.js"></script>
-<script src="js/remover_encomenda.js"></script>
-<script src="js/buscar_encomenda.js"></script>
-</body>
-</html>
+  );
+}

@@ -11,10 +11,12 @@
     box-shadow: 0 4px 8px rgba(249, 160, 63, 0.2);
     padding: 30px 40px;
     margin: 20px 40px 40px 40px;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-sizing: border-box;
 }
 
 .label-input {
@@ -36,6 +38,8 @@
     outline: none;
     resize: none;
     transition: 0.3s;
+    width: 100% !important;
+    box-sizing: border-box;
 }
         .formInput:focus {
             border-color: #e64a32;

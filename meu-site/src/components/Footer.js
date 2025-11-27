@@ -1,4 +1,6 @@
-export default function Inspiracao() {
+import { Link } from "react-router-dom";
+
+export default function Footer() {
     return (
         <footer className="rodape">
             <div className="rodape-conteudo">
@@ -10,10 +12,9 @@ export default function Inspiracao() {
                 <div className="links-uteis">
                     <h3>Links úteis</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="catalogo.html">Catalogo</a></li>
-                        <li><a href="index.html#mapa">Onde nos encontrar</a></li>
-                        <li><a href="contato.html"></a><a>Contato</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/catalogo">Catálogo</Link></li>
+                        <li><Link to="/contato">Contato</Link></li>
                     </ul>
                 </div>
                 <div className="redes-sociais">
