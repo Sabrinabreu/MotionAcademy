@@ -30,7 +30,7 @@ export default function FormContato() {
         <div className="label-input">
           <label className="formLabel">Nome e Sobrenome</label>
           <input
-            className="formInput"
+            className="formInput-contato"
             type="text"
             name="nome"
             placeholder="Digite seu nome completo"
@@ -42,7 +42,7 @@ export default function FormContato() {
         <div className="label-input">
           <label className="formLabel">E-mail</label>
           <input
-            className="formInput"
+            className="formInput-contato"
             type="email"
             name="email"
             placeholder="Digite seu e-mail"
@@ -54,7 +54,7 @@ export default function FormContato() {
         <div className="label-input">
           <label className="formLabel">Telefone</label>
           <input
-            className="formInput"
+            className="formInput-contato"
             type="tel"
             name="telefone"
             placeholder="(00) 00000-0000"
@@ -66,7 +66,7 @@ export default function FormContato() {
         <div className="label-input">
           <label className="formLabel">Mensagem</label>
           <textarea
-            className="formInput"
+            className="formInput-contato"
             name="mensagem"
             rows="6"
             placeholder="Como podemos te ajudar?"
@@ -115,7 +115,7 @@ export default function FormContato() {
         <div className="label-input">
           <label className="formLabel">Qual o motivo do contato?</label>
           <select
-            className="formInput"
+            className="formInput-contato"
             name="motivo"
             value={form.motivo}
             onChange={handleChange}

@@ -30,7 +30,7 @@
     font-weight: bold;
 }
 
-.formInput {
+.formInput-contato {
     font-size: 1rem;
     padding: 12px;
     border: 2px solid #fe5d44;
@@ -41,7 +41,7 @@
     width: 100% !important;
     box-sizing: border-box;
 }
-        .formInput:focus {
+        .formInput-contato:focus {
             border-color: #e64a32;
             box-shadow: 0 0 5px #fe5d44;
         }
